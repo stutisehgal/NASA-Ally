@@ -36,6 +36,7 @@ class IndividualSignUpForm(CreateView):
         return redirect('sitepages/login')
 
 def showCardInfoForm(request):
+    
     if request.method == 'POST':
         obj = CardInfoForm(request.POST)
         try:

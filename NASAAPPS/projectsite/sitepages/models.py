@@ -19,7 +19,7 @@ class Individual(models.Model):
     image = models.ImageField(upload_to='images/')
     link = models.TextField()
     skills = models.TextField()
-    education = models.TextField(default = 'NA')
+    education = models.TextField()
     work_exp = models.CharField(max_length=200)
     is_filled = models.BooleanField(default=False)
 
