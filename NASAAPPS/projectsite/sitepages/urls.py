@@ -12,6 +12,8 @@ urlpatterns = [
         url(r"signupcorporate/$",views.CorporateSignUpForm.as_view(),name='signupcorporate'),
         url(r"signupchoice/$",views.SignUpChoice,name='signupchoice'),
         url(r"ally_assess/$",views.AllyAssessPage,name='allyassess'),
+        url(r"personalinfocard/$",views.showCardInfoForm,name='cardinfoform'),
+        
     ]
 #After making this we need to connect our sitepages to the full project using views and url.
 #We will add it the main urls.py

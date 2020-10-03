@@ -32,23 +32,22 @@
 	
     				<ul class="nav navbar-nav navbar-right">
     					{% if user.is_authenticated %}
-						{% if user.is_individual %}
-							
-                      					<li><a href="#" class="btn btn-simple">Ally Discourse</a></li>
-							<li><a href="{% url 'sitepages:allyassess' %}" class="btn btn-simple">Ally Assess</a></li>
-                      					<li><a href="{% url 'allysocials:blog_main_page' %}" class="btn btn-simple">Ally Socials</a></li>
-                      					<li><a href="#" class="btn btn-simple">Create Card</a></li>
-                      					<li><a href="{% url 'sitepages:logout' %}" class="btn btn-simple">Log out</a></li>
-						{% elif user.is_corporate %}
-                      					<li><a href="#" class="btn btn-simple">Ally Discourse</a></li>
-							<li><a href="{% url 'sitepages:allyassess' %}" class="btn btn-simple">Ally Assess</a></li>
-                      					<li><a href="{% url 'allysocials:blog_main_page' %}" class="btn btn-simple">Ally Socials</a></li>
-                      					<li><a href="#" class="btn btn-simple">View Cards</a></li>
-                      					<li><a href="{% url 'sitepages:logout' %}" class="btn btn-simple">Log out</a></li>
-						{% endif %}
+							{% if user.is_individual %}
+                      			<li><a href="#" class="btn btn-simple">Ally Discourse</a></li>
+								<li><a href="{% url 'sitepages:allyassess' %}" class="btn btn-simple">Ally Assess</a></li>
+                      			<li><a href="{% url 'allysocials:blog_main_page' %}" class="btn btn-simple">Ally Socials</a></li>
+                      			<li><a href="{% url 'sitepages:cardinfoform'  %}" class="btn btn-simple">Create Card</a></li>
+                      			<li><a href="{% url 'sitepages:logout' %}" class="btn btn-simple">Log out</a></li>
+							{% elif user.is_corporate %}
+                      			<li><a href="#" class="btn btn-simple">Ally Discourse</a></li>
+								<li><a href="{% url 'sitepages:allyassess' %}" class="btn btn-simple">Ally Assess</a></li>
+                      			<li><a href="{% url 'allysocials:blog_main_page' %}" class="btn btn-simple">Ally Socials</a></li>
+                      			<li><a href="#" class="btn btn-simple">View Cards</a></li>
+                      			<li><a href="{% url 'sitepages:logout' %}" class="btn btn-simple">Log out</a></li>
+							{% endif %}
 							
     					{% else %}
-						<li><a href="{% url 'sitepages:allyassess' %}" class="btn btn-simple">Ally Assess</a></li>
+							<li><a href="{% url 'sitepages:allyassess' %}" class="btn btn-simple">Ally Assess</a></li>
     						<li><a href="{% url 'allysocials:blog_main_page' %}"class="btn btn-simple">Ally socials</a></li>
     						<li><a href="{% url 'sitepages:login' %}" class="btn btn-simple">Log in</a></li>
     						<li><a href="{% url 'sitepages:signupchoice' %}" class="btn btn-simple">Sign up</a></li>

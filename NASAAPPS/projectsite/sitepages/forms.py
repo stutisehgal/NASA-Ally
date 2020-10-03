@@ -1,8 +1,8 @@
 from django import forms
 from django.contrib.auth.forms import UserCreationForm
 from django.db import transaction
+from django import forms
 from django.forms.utils import ValidationError
-
 from sitepages.models import (User,Individual)
 
 
@@ -46,3 +46,12 @@ class IndividualSignUp(UserCreationForm):
         individual = Individual.objects.create(user=user)
 
         return user
+
+
+
+class CardInfoForm(forms.ModelForm):
+
+    class Meta():
+        model = Individual
+        fields = ['first_name','last_name','bio','image','link','skills','education','work_exp']
+        
