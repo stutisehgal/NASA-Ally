@@ -1,4 +1,5 @@
 from django.conf.urls import url
+from django.urls import path
 from django.contrib.auth import views as auth_views
 #this file already takes care of login and logout views.
 from . import views
@@ -14,7 +15,8 @@ urlpatterns = [
         url(r"ally_assess/$",views.AllyAssessPage,name='allyassess'),
         url(r"personalinfocard/$",views.save,name='cardinfoform'),
         url(r"personalinfovalid/$",views.personalinfovalid,name='cardinfovalid'),
-        url(r"cardview/$",views.ViewCards,name='viewcards'),  
+        url(r"cardview/$",views.ViewCards,name='viewcards'), 
+        path("cardcompleteinfo/<card_id>",views.ShowMoreInfo,name='completeinfo'), 
     ]
 #After making this we need to connect our sitepages to the full project using views and url.
 #We will add it the main urls.py

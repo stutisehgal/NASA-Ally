@@ -2,6 +2,7 @@
 {% load static %} 
 
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta name="apple-mobile-web-app-title" />
@@ -31,23 +32,28 @@
   </head>
 
   <body translate="no" >
+    <nav class="navbar  mynav" role="navigation" id="navbar">
+      <a class="navbar-brand mynav" href="{% url 'home' %}">Home Page</a>
+    </nav>
     <form action="" method="post">
       <div class="tinder">
         <div class="tinder--status">
           <i class="fa fa-remove"></i>
           <i class="fa fa-heart"></i>
         </div>
-      
-        {% csrf_token %}
-        {% for card in all_cards %}
-          <div class="tinder--cards">
+        
+        <div class="tinder--cards">
+          {% csrf_token %}
+          {% for card in all_cards %}
             <div class="tinder--card">
-              <img src="{{card.image}}" />
+              <img src="{{card.image.url}}" />
               <h3>{{ card.first_name }}</h3>
               <p style="text-align: left">Bio:{{card.bio}}</br>Skills:{{card.skills}}</p>
+              <button formaction="{% url 'sitepages:completeinfo' card.user_id %}" type="submit">More Info</button>
             </div>
-          </div>
-        {% endfor %}
+          {% endfor %}
+        </div>
+        
         <div class="tinder--buttons">
           <button id="nope"><i class="fa fa-remove"></i></button>
           <button id="love"><i class="fa fa-heart"></i></button>

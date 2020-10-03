@@ -5,6 +5,7 @@ from django.utils.html import escape, mark_safe
 from django.contrib.auth import get_user_model
 from django.db.models.signals import post_save
 from django.dispatch import receiver
+from django_resized import ResizedImageField
 
 
 class User(AbstractUser):
@@ -18,12 +19,11 @@ class Individual(models.Model):
     first_name = models.CharField(max_length=100)
     last_name = models.CharField(max_length=100)
     bio = models.TextField()
-    image = models.ImageField(upload_to='images/')
+    image = ResizedImageField(size=[500, 300], upload_to='images/', blank=True, null=True,quality=100)
     link = models.TextField()
     skills = models.TextField()
     education = models.TextField()
     work_exp = models.CharField(max_length=200)
-    is_filled = models.BooleanField(default=False)
 
     class Meta:
         db_table = 'Individual'

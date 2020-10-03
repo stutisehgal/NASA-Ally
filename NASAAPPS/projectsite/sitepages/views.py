@@ -42,11 +42,9 @@ def save(request):
     if request.method == 'POST':
         obj = CardInfoForm(request.POST,request.FILES)
         try:
-            if obj.is_valid():
-                
+            if obj.is_valid():          
                 form = obj.save(commit=False)
                 form.user = User.objects.get(id=request.user.id)
-                form.is_filled = True
                 form.save()
                 return render(request,'sitepages/valid.html')
         except:
@@ -70,3 +68,7 @@ def AllyAssessPage(request):
 def ViewCards(request):
     all_info = Individual.objects.all()
     return render(request,'sitepages/profilecard.html',{'all_cards':all_info})
+
+def ShowMoreInfo(request,card_id):
+    specific_info = Individual.objects.get(pk=card_id)
+    return render(request,'sitepages/showcardinfo.html',{'info':specific_info})
