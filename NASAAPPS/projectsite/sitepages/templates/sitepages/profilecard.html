@@ -31,28 +31,29 @@
   </head>
 
   <body translate="no" >
-    <div class="tinder">
-      <div class="tinder--status">
-        <i class="fa fa-remove"></i>
-        <i class="fa fa-heart"></i>
-      </div>
-      <div class="tinder--cards">
-        <form action="" method="post">
-          {% csrf_token %}
-          {% for card in all_cards %}
+    <form action="" method="post">
+      <div class="tinder">
+        <div class="tinder--status">
+          <i class="fa fa-remove"></i>
+          <i class="fa fa-heart"></i>
+        </div>
+      
+        {% csrf_token %}
+        {% for card in all_cards %}
+          <div class="tinder--cards">
             <div class="tinder--card">
-              <img src="#" />
+              <img src="{{card.image}}" />
               <h3>{{ card.first_name }}</h3>
               <p style="text-align: left">Bio:{{card.bio}}</br>Skills:{{card.skills}}</p>
             </div>
-          {% endfor %}
-        </form>
+          </div>
+        {% endfor %}
+        <div class="tinder--buttons">
+          <button id="nope"><i class="fa fa-remove"></i></button>
+          <button id="love"><i class="fa fa-heart"></i></button>
+        </div>
       </div>
-      <div class="tinder--buttons">
-        <button id="nope"><i class="fa fa-remove"></i></button>
-        <button id="love"><i class="fa fa-heart"></i></button>
-      </div>
-    </div>
+    </form>
     <script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
 
     <script src="https://hammerjs.github.io/dist/hammer.min.js"></script>
