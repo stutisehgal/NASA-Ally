@@ -1,13 +1,10 @@
 {% extends 'base.html' %}
-{% load static %}
-
-{% csrf_token %}
 {% load bootstrap3 %}
-
 {% block content %}
   <div class='container'>
     <h1>Input Your Information for the form</h1>
-    <form method='POST'>
+    <form method='POST' enctype="multipart/form-data">
+      {% csrf_token %}
       {% bootstrap_form form %}
       </br>
       <input type="submit" class ="btn btn-default" name="" value="Submit">

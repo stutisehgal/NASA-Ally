@@ -4,6 +4,8 @@ from django.views.generic import CreateView
 from django.urls import reverse_lazy
 from sitepages.forms import CorporateSignUp,IndividualSignUp,CardInfoForm
 from sitepages.models import User,Individual
+from django.db.models.signals import post_save
+from django.dispatch import receiver
 
 # Create your views here.
 class CorporateSignUpForm(CreateView):
@@ -35,21 +37,27 @@ class IndividualSignUpForm(CreateView):
         user = form.save()
         return redirect('sitepages/login')
 
-def showCardInfoForm(request):
+def save(request):
     
     if request.method == 'POST':
-        obj = CardInfoForm(request.POST)
+        obj = CardInfoForm(request.POST,request.FILES)
         try:
             if obj.is_valid():
-                obj.save()
-                obj.is_filled = True
-                return redirect('sitepages/valid.html')
+                
+                form = obj.save(commit=False)
+                form.user = User.objects.get(id=request.user.id)
+                form.is_filled = True
+                form.save()
+                return render(request,'sitepages/valid.html')
         except:
             return redirect('')
     else:
         obj = CardInfoForm()
     return render(request,'sitepages/personalinfoform.html',{'form':obj})
                 
+def personalinfovalid(request):
+    return render(request,'sitepages/valid.html')
+
 
 def SignUpChoice(request):
      return render(request,'sitepages/first.html')

@@ -51,7 +51,6 @@ class IndividualSignUp(UserCreationForm):
 
 class CardInfoForm(forms.ModelForm):
 
-    class Meta():
+    class Meta:
         model = Individual
         fields = ['first_name','last_name','bio','image','link','skills','education','work_exp']
-        

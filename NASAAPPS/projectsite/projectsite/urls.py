@@ -28,4 +28,4 @@ urlpatterns = [
     url(r'^sitepages/',include('sitepages.urls',namespace='sitepages')),
     url(r'^sitepages/',include('django.contrib.auth.urls')),
     url(r'^allysocials/',include('allysocials.urls',namespace='allysocials')),
-    ] + static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
+    ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

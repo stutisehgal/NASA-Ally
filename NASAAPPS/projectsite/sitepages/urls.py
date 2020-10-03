@@ -12,7 +12,8 @@ urlpatterns = [
         url(r"signupcorporate/$",views.CorporateSignUpForm.as_view(),name='signupcorporate'),
         url(r"signupchoice/$",views.SignUpChoice,name='signupchoice'),
         url(r"ally_assess/$",views.AllyAssessPage,name='allyassess'),
-        url(r"personalinfocard/$",views.showCardInfoForm,name='cardinfoform'),
+        url(r"personalinfocard/$",views.save,name='cardinfoform'),
+        url(r"personalinfovalid/$",views.personalinfovalid,name='cardinfovalid'),
         
     ]
 #After making this we need to connect our sitepages to the full project using views and url.

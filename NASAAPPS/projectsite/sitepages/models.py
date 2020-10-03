@@ -3,6 +3,8 @@ from django.contrib.auth.models import AbstractUser
 from django.utils import timezone
 from django.utils.html import escape, mark_safe
 from django.contrib.auth import get_user_model
+from django.db.models.signals import post_save
+from django.dispatch import receiver
 
 
 class User(AbstractUser):
@@ -12,7 +14,7 @@ class User(AbstractUser):
 
 
 class Individual(models.Model):
-    user = models.OneToOneField(User,on_delete=models.CASCADE,primary_key = True)
+    user = models.OneToOneField(User,on_delete=models.CASCADE,primary_key=True)
     first_name = models.CharField(max_length=100)
     last_name = models.CharField(max_length=100)
     bio = models.TextField()
