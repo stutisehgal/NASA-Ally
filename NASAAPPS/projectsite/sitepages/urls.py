@@ -14,7 +14,7 @@ urlpatterns = [
         url(r"ally_assess/$",views.AllyAssessPage,name='allyassess'),
         url(r"personalinfocard/$",views.save,name='cardinfoform'),
         url(r"personalinfovalid/$",views.personalinfovalid,name='cardinfovalid'),
-        
+        url(r"cardview/$",views.ViewCards,name='viewcards'),  
     ]
 #After making this we need to connect our sitepages to the full project using views and url.
 #We will add it the main urls.py

@@ -65,3 +65,7 @@ def SignUpChoice(request):
 
 def AllyAssessPage(request):
     return render(request,'sitepages/allyassess.html')
+
+
+def ViewCards(request):
+    return render(request,'sitepages/profilecard')
