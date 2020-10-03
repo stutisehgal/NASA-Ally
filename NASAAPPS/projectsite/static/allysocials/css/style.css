@@ -2,6 +2,23 @@
 html {
   overflow-x: hidden; }
 
+@font-face {
+    font-family: font1;
+    src: url('\2020_fonts\2020_fonts\Barlow\Barlow-Medium.ttf');
+  }
+  @font-face {
+    font-family: font2;
+    src: url('\2020_fonts\2020_fonts\Barlow\Barlow-Black.ttf');
+  }
+  @font-face {
+    font-family: font3;
+    src: url('\2020_fonts\2020_fonts\Barlow\Barlow-ExtraBold.ttf');
+  }
+  @font-face {
+    font-family: font4;
+    src: url('\2020_fonts\2020_fonts\Barlow\Barlow-BoldItalic.ttf');
+  }
+
 body {
   line-height: 1.7;
   color: gray;
@@ -1178,7 +1195,7 @@ h1, h2, h3, h4, h5,
       color: #000; }
 
 .more {
-  color: #8bc34a;
+  color: #11566b;
   text-transform: uppercase;
   font-size: .83rem; }
 
