@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% extends 'base.html' %} {% load bootstrap3 %} {% block content %}
+  {% load static %}
+
+  <head>
+	  <link rel="stylesheet" href="{% static './projectsite/css/signup.css' %}">
+  </head>
+
+  <body>
+        
+    <div>
+    <div class='jumbotron'>
+      <div class="container">
+        <h1 class="display-3">Welcome to the Sign-Up Page</h1>
+        <p>
+          Add all the content about sign-up here.
+        </p>
+        <p>
+          <a class="btn btn-primary btn-lg" href="{% url 'sitepages:signupindividual' %}" role="button"
+            >Individual Sign-up &raquo;</a
+          >
+        </p>
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Individual Sign-up</h2>
+          <p>
+            If you are an individual looking forward to join our initiative,
+            join from here.
+          </p>
+          <p>
+            <a class="btn btn-secondary" href="{% url 'sitepages:signupindividual' %}" role="button"
+              >View details &raquo;</a
+            >
+          </p>
+        </div>
+        <div class="col-md-6">
+          <h2>Corporate Signup</h2>
+          <p>
+            If you are an organization or a company, connect with us from here.
+          </p>
+          <p>
+            <a class="btn btn-secondary" href="{% url 'sitepages:signupcorporate' %}" role="button"
+              >View details &raquo;</a
+            >
+          </p>
+        </div>
+      </div>
+
+      <hr />
+    </div>
+  </div>
+    <!-- /container -->
+</body>
+  <script
+    src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"
+  ></script>
+  <script>
+    window.jQuery ||
+      document.write(
+        '<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>'
+      );
+  </script>
+  <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+</html>
+
+{% endblock %}
