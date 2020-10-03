@@ -68,4 +68,5 @@ def AllyAssessPage(request):
 
 
 def ViewCards(request):
-    return render(request,'sitepages/profilecard')
+    all_info = Individual.objects.all()
+    return render(request,'sitepages/profilecard.html',{'all_cards':all_info})
