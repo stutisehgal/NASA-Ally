@@ -1,5 +1,5 @@
 # NASA-Ally
-## What is ally?
+## What is "Ally"?
 There is still much pain, confusion, fear, and anger around racial and transgender identity; it is no wonder that families struggle with what to tell their children. We must acknowledge that we have all been shaped by a system built on inequality and racism—one that consistently bombards us with stereotypical images of certain cultures and excludes voices from different backgrounds. Racism isn’t just Black people’s problem; it’s everyone’s problem because it erodes the fabric of society.  At its core, racism is a powerful system that creates false hierarchies of human value; its warped logic extends beyond race, from the way we regard people of different ethnicities or skin colors to the way we treat people of different sexes, gender identities, and body types. When community building, the power to share our own stories and hear the stories of others is foundational and uplifts us all. Breaking the barriers , Coming together as one. We developed a website called “Ally” that will bring a global impact on people's lives by bridging the gap that causes people to experience inequality on a daily scale. Ally is a common platform to chat, connect and be educated about inequality that can impact millions of lives.
 Our congenial bot "Ally Unity" gives an extensive tour of the Ally website.
 
@@ -23,9 +23,10 @@ For running the django site
 Write the following command:
 Pip install django-resized
 
-## What is ally pride fashion?
+## What is Ally Pride Fashion?
 Ally Pride Fashion is a novel idea, an open platform to provide a one-stop solution for jobs and internships, making the LGBT community grow larger and stronger in the Fashion industry, by making their own portfolio cards visible to Fashion Industry Hiring managers and companies.🌈
 “Ally Pride Fashion” is a novel and innovative approach that gives the LGBT an open platform to connect with professionals and companies, to progress in their careers and leave a mark on the Fashion Industry.
+<img src="https://github.com/stutisehgal/NASA-Ally/blob/main/images/lgbtq.jpg" width="593" height="598">
 
 ### Future impact:
 As the LGBTQ is blooming in fashion industry our pride fashion can be a common platform for fashion industry people to communicate, find new job opportunities, share information, etc. Fashion plays a very large role in today's era and there's no specific platform for the industry. Hence Pride fashion can be the future linkedin.
