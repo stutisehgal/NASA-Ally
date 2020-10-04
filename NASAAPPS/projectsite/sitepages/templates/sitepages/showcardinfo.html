@@ -2,8 +2,9 @@
 
 {% block content %}
     <div class='container'>
-        
-
+        <form action='' method="POST">
+            {% csrf_token %}
+            <img src={{ info.image.url }}></img>
+        </form>
     </div>
-
 {% endblock %}

@@ -2,4 +2,18 @@
 
 {% block content %}
 	<h1> Welcome to site created by Team Ally</h1>
+
+	<script>
+  		window.watsonAssistantChatOptions = {
+      		integrationID: "f62fbcbf-6ef4-4f7a-935b-d93e08a063d8", // The ID of this integration.
+      		region: "eu-gb", // The region your integration is hosted in.
+      		serviceInstanceID: "a564abd8-2eed-4afc-9199-20b170e01a09", // The ID of your service instance.
+      		onLoad: function(instance) { instance.render(); }
+    	};
+  		setTimeout(function(){
+    	const t=document.createElement('script');
+    	t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+    	document.head.appendChild(t);
+  	});
+</script>
 {% endblock %}

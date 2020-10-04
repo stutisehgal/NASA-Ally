@@ -69,6 +69,8 @@ def ViewCards(request):
     all_info = Individual.objects.all()
     return render(request,'sitepages/profilecard.html',{'all_cards':all_info})
 
+
+#TO LOOK AT A SPECIFIC CARD.
 def ShowMoreInfo(request,card_id):
     specific_info = Individual.objects.get(pk=card_id)
     return render(request,'sitepages/showcardinfo.html',{'info':specific_info})
