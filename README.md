@@ -1,5 +1,6 @@
 # NASA-Ally
 
+# How to run the website?
 To start the project first in the cmd console run the following pip commands:
 pip install django
 pip install django-bootstrap3
