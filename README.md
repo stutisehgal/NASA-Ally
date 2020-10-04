@@ -1,7 +1,7 @@
 # NASA-Ally
 
 <p align="center">
-<img src="https://github.com/stutisehgal/NASA-Ally/blob/main/images/ally1.jpg" width=80%/>
+<img src="https://github.com/stutisehgal/NASA-Ally/blob/main/images/ally1.jpg" width="200" height="280">
 </p>
 
 ## What is "Ally"?
