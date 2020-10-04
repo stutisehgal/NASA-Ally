@@ -4,6 +4,11 @@
   <head>
     <meta charset="utf-8" />
     <title>Team Ally</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="/media/images/ally-logo-white.png"
+    />
 
     <link
       rel="stylesheet"
@@ -45,20 +50,14 @@
       <div class="container">
         <a class="navbar-brand" href="{% url 'home' %}">
           <img
-            src="../media/images/ally-logo-white.png"
+            src="/media/images/ally-logo-white.png"
             alt="HomePage"
             class="nav-logo"
-            style="height: 150%"
           />
         </a>
 
         <ul class="nav navbar-nav navbar-right">
           {% if user.is_authenticated %} {% if user.is_individual %}
-          <li>
-            <a href="https://ally.trydiscourse.com/" class="btn btn-simple"
-              >Ally Discourse</a
-            >
-          </li>
           <li>
             <a href="{% url 'sitepages:allyassess' %}" class="btn btn-simple"
               >Ally Bais Assessment</a
@@ -82,11 +81,7 @@
             >
           </li>
           {% elif user.is_corporate %}
-          <li>
-            <a href="https://ally.trydiscourse.com/" class="btn btn-simple"
-              >Ally Discourse</a
-            >
-          </li>
+
           <li>
             <a href="{% url 'sitepages:allyassess' %}" class="btn btn-simple"
               >Ally Bias Assessment</a
@@ -110,6 +105,11 @@
             >
           </li>
           {% endif %} {% else %}
+          <li>
+            <a href="https://ally.trydiscourse.com/" class="btn btn-simple"
+              >Ally Discourse</a
+            >
+          </li>
           <li>
             <a href="{% url 'sitepages:allyassess' %}" class="btn btn-simple"
               >Ally Bias Assessment</a

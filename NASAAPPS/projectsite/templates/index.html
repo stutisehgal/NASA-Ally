@@ -1,28 +1,67 @@
-{% extends "base.html" %}
-{% load static %}
+{% extends "base.html" %} {% load static %} {% load bootstrap4 %}
+<!DOCTYPE html>
+<html lang="en">
+  {% block content %}
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'projectsite/css/master.css' %}" />
+    <link rel="stylesheet" href="{% static 'projectsite/css/home.css' %}" />
+  </head>
+  <body>
+    <div class="head1">
+      <h1>Welcome to Ally</h1>
+      <br />
+    </div>
+    <div class="row body1">
+      <div class="col-lg-9">
+        <p>
+          Breaking the barriers, Coming together as one. “Ally” is a website
+          platform to connect,and be educated about inequality that can impact
+          millions of lives. “Ally Social” displays the current situation of
+          LGBT and Black lives as stories and podcasts, “Ally Discourse”
+          provides a safe forum where people can connect, share problems,and
+          inspire. “Ally Pride Fashion” is a novel and innovative approach that
+          gives the LGBT an open platform to connect with professionals and
+          companies, to progress in their careers and leave a mark on the
+          Fashion Industry.
 
-{% block content %}
-    <link rel="stylesheet" href="{% static 'projectsite/css/master.css' %}"/>
-	<h1> Welcome to site created by Team Ally</h1></br>
-	<p>Breaking the barriers, Coming together as one. “Ally” is a website platform to connect,and be educated about inequality that can impact millions of lives. “Ally Social” displays the current situation of LGBT and Black lives as stories and podcasts, 
-	“Ally Discourse” provides a safe forum where people can connect, share problems,and inspire. “Ally Pride Fashion” is a novel and innovative approach that gives the LGBT an open platform to connect with professionals and companies, to progress in their
-	careers and leave a mark on the Fashion Industry. “Ally Bias Assessment” allows reflecting on viewpoints as an essential way to start realising and breaking down biases and harmful perceptions.</p>
+          <br />
+          <br />
+          “Ally Bias Assessment” allows reflecting on viewpoints as an essential
+          way to start realising and breaking down biases and harmful
+          perceptions.
+        </p>
+      </div>
+      <div class="col-lg-3">
+        <img src="/media/images/NASA logo.png" alt="" id="nasalogo" />
+      </div>
+    </div>
 
-	<img src='/media/images/Blue and Black Timeline Presentation.png' style='max-width:75%'></img>
-	
+    <div class="timelineimg">
+      <img
+        src="/media/images/Blue and Black Timeline Presentation.png"
+        style="max-width: 75%"
+      />
+    </div>
 
-
-	<script>
-  		window.watsonAssistantChatOptions = {
-      		integrationID: "f62fbcbf-6ef4-4f7a-935b-d93e08a063d8", // The ID of this integration.
-      		region: "eu-gb", // The region your integration is hosted in.
-      		serviceInstanceID: "a564abd8-2eed-4afc-9199-20b170e01a09", // The ID of your service instance.
-      		onLoad: function(instance) { instance.render(); }
-    	};
-  		setTimeout(function(){
-    	const t=document.createElement('script');
-    	t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
-    	document.head.appendChild(t);
-  	});
-</script>
-{% endblock %}
+    <script>
+      window.watsonAssistantChatOptions = {
+        integrationID: "f62fbcbf-6ef4-4f7a-935b-d93e08a063d8", // The ID of this integration.
+        region: "eu-gb", // The region your integration is hosted in.
+        serviceInstanceID: "a564abd8-2eed-4afc-9199-20b170e01a09", // The ID of your service instance.
+        onLoad: function (instance) {
+          instance.render();
+        },
+      };
+      setTimeout(function () {
+        const t = document.createElement("script");
+        t.src =
+          "https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+        document.head.appendChild(t);
+      });
+    </script>
+  </body>
+  {% endblock %}
+</html>

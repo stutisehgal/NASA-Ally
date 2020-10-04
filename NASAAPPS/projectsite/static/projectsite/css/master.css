@@ -29,7 +29,8 @@ body {
   color: white;
 }
 .nav-logo {
-  width: 50%;
+  min-width: 5px;
+  max-width: 60px;
 }
 #note {
   color: rgba(249, 241, 204, 1);

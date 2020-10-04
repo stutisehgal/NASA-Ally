@@ -1,0 +1,22 @@
+.head1 {
+  padding-left: 20%;
+  padding-top: 3%;
+}
+h1 {
+  font-weight: 800;
+  font-size: 3em;
+}
+.body1 {
+  padding-left: 20%;
+  font-size: 2rem;
+}
+#nasalogo {
+  width: 150%;
+  height: auto;
+  margin-left: 50%;
+}
+
+.timelineimg {
+  margin-top: 20%;
+  text-align: center;
+}
