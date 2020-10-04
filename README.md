@@ -2,10 +2,10 @@
 
 <div class="row">
   <div class="column">
-    <img src="https://github.com/stutisehgal/NASA-Ally/blob/main/images/SpaceApps_logo-circle-white.png">
+    <img src="https://github.com/stutisehgal/NASA-Ally/blob/main/images/SpaceApps_logo-circle-white.png"  width="400" height="200">
   </div>
   <div class="column">
-    <img src="https://github.com/stutisehgal/NASA-Ally/blob/main/images/ally%20logo.jpeg">
+    <img src="https://github.com/stutisehgal/NASA-Ally/blob/main/images/ally%20logo.jpeg"  width="400" height="200">
   </div>
 </div>
 
