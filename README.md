@@ -27,7 +27,7 @@ Pip install django-resized
 ## What is Ally Pride Fashion?
 Ally Pride Fashion is a novel idea, an open platform to provide a one-stop solution for jobs and internships, making the LGBT community grow larger and stronger in the Fashion industry, by making their own portfolio cards visible to Fashion Industry Hiring managers and companies.🌈
 “Ally Pride Fashion” is a novel and innovative approach that gives the LGBT an open platform to connect with professionals and companies, to progress in their careers and leave a mark on the Fashion Industry.
-<img src="https://github.com/stutisehgal/NASA-Ally/blob/main/images/lgbtq.jpg" width="498" height="498">
+<img src="https://github.com/stutisehgal/NASA-Ally/blob/main/images/lgbtq.jpg" width="500" height="593">
 
 ### Future impact:
 As the LGBTQ is blooming in fashion industry our pride fashion can be a common platform for fashion industry people to communicate, find new job opportunities, share information, etc. Fashion plays a very large role in today's era and there's no specific platform for the industry. Hence Pride fashion can be the future linkedin.
