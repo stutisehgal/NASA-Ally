@@ -10,8 +10,8 @@
             <p>Name: {{ info.first_name }} {{ info.last_name }}</p>
             </br>
             <p>Bio: {{ info.bio }}</p>
-            <p>Instagram Link: <a href="{{ info.instagram_link }}">{{ instagram_link }}</a></p>
-            <p>Linkedin Link: <a href="{{ info.linked_link }}">{{ info.linked_link }}</a></p>
+            <p>Instagram Link: <a href={{ info.instagram_link }}>{{ info.instagram_link }}</a></p>
+            <p>Linkedin Link: <a href={{ info.linked_link }}>{{ info.linked_link }}</a></p>
             <p>Skills: {{ info.skills }}</p>
             <p>Education: {{ info.education }}</p>
             <p>Work Experience: {{ info.work_exp }}</p>
