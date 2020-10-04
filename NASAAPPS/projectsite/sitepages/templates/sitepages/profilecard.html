@@ -49,7 +49,7 @@
               <img src="{{card.image.url}}" />
               <h3>{{ card.first_name }}</h3>
               <p style="text-align: left">Bio:{{card.bio}}</br>Skills:{{card.skills}}</br>Instagram Link: {{ card.instagram_link }}</p>
-              <button class="profile" style="margin-top: 95%; " formaction="{% url 'sitepages:completeinfo' card.user_id %}" type="submit">More Info</button>
+              <button class="profile" style="margin-top: 5%; " formaction="{% url 'sitepages:completeinfo' card.user_id %}" type="submit">More Info</button>
             </div>
           {% endfor %}
         </div>

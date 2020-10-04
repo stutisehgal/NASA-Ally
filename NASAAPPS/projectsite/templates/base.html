@@ -59,6 +59,11 @@
         <ul class="nav navbar-nav navbar-right">
           {% if user.is_authenticated %} {% if user.is_individual %}
           <li>
+            <a href="https://ally.trydiscourse.com/" class="btn btn-simple"
+              >Ally Discourse</a
+            >
+          </li>
+          <li>
             <a href="{% url 'sitepages:allyassess' %}" class="btn btn-simple"
               >Ally Bais Assessment</a
             >
@@ -81,6 +86,11 @@
             >
           </li>
           {% elif user.is_corporate %}
+          <li>
+            <a href="https://ally.trydiscourse.com/" class="btn btn-simple"
+              >Ally Discourse</a
+            >
+          </li>
 
           <li>
             <a href="{% url 'sitepages:allyassess' %}" class="btn btn-simple"
