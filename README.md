@@ -1,6 +1,8 @@
 # NASA-Ally
 
-<img src="https://github.com/stutisehgal/NASA-Ally/blob/main/images/ally1.jpg" width="593" height="598">
+<p align="center">
+<img src="https://github.com/stutisehgal/NASA-Ally/blob/main/images/ally1.jpg" width=80%/>
+</p>
 
 ## What is "Ally"?
 There is still much pain, confusion, fear, and anger around racial and transgender identity; it is no wonder that families struggle with what to tell their children. We must acknowledge that we have all been shaped by a system built on inequality and racism—one that consistently bombards us with stereotypical images of certain cultures and excludes voices from different backgrounds. Racism isn’t just Black people’s problem; it’s everyone’s problem because it erodes the fabric of society.  At its core, racism is a powerful system that creates false hierarchies of human value; its warped logic extends beyond race, from the way we regard people of different ethnicities or skin colors to the way we treat people of different sexes, gender identities, and body types. When community building, the power to share our own stories and hear the stories of others is foundational and uplifts us all. Breaking the barriers , Coming together as one. We developed a website called “Ally” that will bring a global impact on people's lives by bridging the gap that causes people to experience inequality on a daily scale. Ally is a common platform to chat, connect and be educated about inequality that can impact millions of lives.
@@ -39,7 +41,9 @@ As the LGBTQ is blooming in fashion industry our pride fashion can be a common p
 ## What is Ally Discourse?
 The process of sharing stories strengthens our ability to consider different perspectives and builds our empathy towards others. A community cannot exist unless the people coming together care about and feel connected to each other. Conversations about one’s race and gender may be uncomfortable, yet it is at the edge of discomfort where we can learn the most. Since we cannot remove the risk from such conversations, we encourage a shift in mindset. By moving from safe spaces to our forum Ally Discourse, we can rise to the challenge of having honest conversations that lead to a more equitable society. Ally Discourse provides a platform to openly share your stories when injustice was done to or around you and help prevent it any further! 👫👩🏻‍🤝‍👩🏻 
 
+<p align="center">
 <img src="https://github.com/stutisehgal/NASA-Ally/blob/main/images/equality.jpg" width="200" height="230">
+</p>
 
 ## What is Ally Social?
 Ally Social is designed to provide content and resources by bringing to you stories podcast and articles from the NASA Resources, that strengthen the ability to consider different perspectives and builds empathy towards others. A community cannot exist unless the people coming together care about and feel connected to each other. This nuance reminds us that we can have things in common and be in the same space, but still feel isolated from and even afraid of each other. By considering each other’s lives and experiences, and perspectives, we allow a community to be not only about what we have in common but what makes us different. 
