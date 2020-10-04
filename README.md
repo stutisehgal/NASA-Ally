@@ -6,7 +6,7 @@ There is still much pain, confusion, fear, and anger around racial and transgend
 Our congenial IBM Watson Assistant Chatbot "Ally Unity" gives an extensive tour of the Ally website.
 
 <p align="center">
-<img src="https://github.com/stutisehgal/NASA-Ally/blob/main/images/ally%20logo.jpeg" width="400" height="200">
+<img src="https://github.com/stutisehgal/NASA-Ally/blob/main/images/ally%20logo.jpeg" width="598" height="600">
 </p>
 
 ### How to run the website?
@@ -41,14 +41,14 @@ Ally Pride Fashion is a novel idea, an open platform to provide a one-stop solut
 “Ally Pride Fashion” is a novel and innovative approach that gives the LGBT an open platform to connect with professionals and companies, to progress in their careers and leave a mark on the Fashion Industry.
 
 <p align="center">
-<img src="https://github.com/stutisehgal/NASA-Ally/blob/main/images/signup%20pride.jpeg" width="200" height="230">
+<img src="https://github.com/stutisehgal/NASA-Ally/blob/main/images/signup%20pride.jpeg" width="598" height="600">
 </p>
 
 ### Future impact:
 As the LGBTQ is blooming in fashion industry our pride fashion can be a common platform for fashion industry people to communicate, find new job opportunities, share information, etc. Fashion plays a very large role in today's era and there's no specific platform for the industry. Hence Pride fashion can be the future linkedin.
 
 <p align="center">
-<img src="https://github.com/stutisehgal/NASA-Ally/blob/main/images/card.png" width="200" height="230">
+<img src="https://github.com/stutisehgal/NASA-Ally/blob/main/images/card.png" width="598" height="600">
 </p>
 
 ## What is Ally Discourse?
@@ -58,21 +58,21 @@ The process of sharing stories strengthens our ability to consider different per
 Ally Social is designed to provide content and resources by bringing to you stories podcast and articles from the NASA Resources, that strengthen the ability to consider different perspectives and builds empathy towards others. A community cannot exist unless the people coming together care about and feel connected to each other. This nuance reminds us that we can have things in common and be in the same space, but still feel isolated from and even afraid of each other. By considering each other’s lives and experiences, and perspectives, we allow a community to be not only about what we have in common but what makes us different. 
 
 <p align="center">
-<img src="https://github.com/stutisehgal/NASA-Ally/blob/main/images/ally%20social%20carousel.jpeg" width="200" height="230">
+<img src="https://github.com/stutisehgal/NASA-Ally/blob/main/images/ally%20social%20carousel.jpeg" width="598" height="600">
 </p>
 
 ## What is Ally Bias Assessment?
 Reflecting on whose viewpoints are given power—in all subjects, including math and science—is an essential way to start breaking down biases, microaggresions and harmful perceptions.  Ally Bias Assessment commits to lifelong learning about one’s biases and trying to empathize rather than sympathise or ridicule the wronged, without relying on Black and brown people or the trans-gender to educate about what happened in order to justify their hurt and outrage or counter “colorblind” rhetoric. For instance, when learning about police brutality against unarmed Black people, the correct reaction is demonstrating compassion and empathy, instead of searching for evidence about what the victim did to deserve abuse or judging those who engaged in looting instead of discussing the unjust act that drove people to the streets.
 
 <p align="center">
-<img src="https://github.com/stutisehgal/NASA-Ally/blob/main/images/ally%20bias%20assessment.jpeg" width="200" height="230">
+<img src="https://github.com/stutisehgal/NASA-Ally/blob/main/images/ally%20bias%20assessment.jpeg" width="598" height="600">
 </p>
 
 ## What are future aspects and impact of fashion pride?
 1. More secure and meticulous screening for a company email address and verification.
 
 <p align="center">
-<img src="https://github.com/stutisehgal/NASA-Ally/blob/main/images/signup%20pride%20corporate.jpeg" width="200" height="230">
+<img src="https://github.com/stutisehgal/NASA-Ally/blob/main/images/signup%20pride%20corporate.jpeg" width="598" height="600">
 </p>
 
 2. Implementing of creating a blog by the individual and company user type
@@ -81,7 +81,7 @@ Reflecting on whose viewpoints are given power—in all subjects, including math
 
 
 <p align="center">
-<img src="https://github.com/stutisehgal/NASA-Ally/blob/main/images/create%20card%20indi.jpeg" width="200" height="230">
+<img src="https://github.com/stutisehgal/NASA-Ally/blob/main/images/create%20card%20indi.jpeg" width="598" height="600">
 </p>
 
 4. Automatic Forum/Ally discourse moderation. 
