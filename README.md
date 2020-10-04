@@ -1,5 +1,28 @@
 # NASA-Ally
 
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+</head>
+<body>
+
 <div class="row">
   <div class="column">
     <img src="https://github.com/stutisehgal/NASA-Ally/blob/main/images/SpaceApps_logo-circle-white.png" style="width:100%">
@@ -8,6 +31,10 @@
     <img src="https://github.com/stutisehgal/NASA-Ally/blob/main/images/ally%20logo.jpeg" style="width:100%">
   </div>
 </div>
+
+</body>
+</html>
+
 
 ## What is "Ally"?
 There is still much pain, confusion, fear, and anger around racial and transgender identity; it is no wonder that families struggle with what to tell their children. We must acknowledge that we have all been shaped by a system built on inequality and racism—one that consistently bombards us with stereotypical images of certain cultures and excludes voices from different backgrounds. Racism isn’t just Black people’s problem; it’s everyone’s problem because it erodes the fabric of society.  At its core, racism is a powerful system that creates false hierarchies of human value; its warped logic extends beyond race, from the way we regard people of different ethnicities or skin colors to the way we treat people of different sexes, gender identities, and body types. When community building, the power to share our own stories and hear the stories of others is foundational and uplifts us all. Breaking the barriers , Coming together as one. We developed a website called “Ally” that will bring a global impact on people's lives by bridging the gap that causes people to experience inequality on a daily scale. Ally is a common platform to chat, connect and be educated about inequality that can impact millions of lives.
