@@ -7,23 +7,23 @@ html{
 
 @font-face {
     font-family: font1;
-    src: url('..\2020_fonts\2020_fonts\Barlow\Barlow-Medium.ttf');
+    src: url('css\2020_fonts\2020_fonts\Barlow\Barlow-Medium.ttf');
   }
   @font-face {
     font-family: font2;
-    src: url('..\2020_fonts\2020_fonts\Barlow\Barlow-Black.ttf');
+    src: url('css\2020_fonts\2020_fonts\Barlow\Barlow-Black.ttf');
   }
   @font-face {
     font-family: font3;
-    src: url('..\2020_fonts\2020_fonts\Barlow\Barlow-ExtraBold.ttf');
+    src: url('css\2020_fonts\2020_fonts\Barlow\Barlow-ExtraBold.ttf');
   }
   @font-face {
     font-family: font4;
-    src: url('..\2020_fonts\2020_fonts\Barlow\Barlow-BoldItalic.ttf');
+    src: url('css\2020_fonts\2020_fonts\Barlow\Barlow-BoldItalic.ttf');
   }
 body {
   font-weight: 300;
-  font-size: 1.1rem;
+  font-size: 15rem;
   font-family: font1; }
 
 

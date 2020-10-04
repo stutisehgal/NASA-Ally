@@ -53,4 +53,4 @@ class CardInfoForm(forms.ModelForm):
 
     class Meta:
         model = Individual
-        fields = ['first_name','last_name','bio','image','link','skills','education','work_exp']
+        fields = ['first_name','last_name','bio','image','instagram_link','linkedin_link','skills','education','work_exp']

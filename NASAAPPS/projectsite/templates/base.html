@@ -6,6 +6,7 @@
     <title>Team Ally</title>
 
     <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="{% static 'css/master.css' %}"/>
 
     <link
       rel="stylesheet"
@@ -36,9 +37,6 @@
 
     <link rel="stylesheet" href="{% static 'projectsite/css/master.css'%}" />
     <link rel="stylesheet" href="{% static 'css/master.css'%}" />
-  </head>
-
-  <body>
     <nav class="navbar mynav" role="navigation" id="navbar">
       {% csrf_token %}
       <div class="container">
@@ -128,11 +126,18 @@
         </ul>
       </div>
     </nav>
-
-    <div class="container mycontent" style="position: absolute">
-      {% block content %} {% endblock %}
+  </head>
+  
+  <body>
+    <canvas id="canvas" style="position:absolute"></canvas>
+    <div class="container mycontent" style="position:absolute;font-size: 2.5rem; text-align:justify;">
+      
+      {% block content %} 
+      
+      {% endblock %}
+      
     </div>
-    <canvas id="canvas"></canvas>
+    
     <span id="note"></span>
   </body>
   <script

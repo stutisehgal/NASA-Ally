@@ -48,7 +48,7 @@
             <div class="tinder--card">
               <img src="{{card.image.url}}" />
               <h3>{{ card.first_name }}</h3>
-              <p style="text-align: left">Bio:{{card.bio}}</br>Skills:{{card.skills}}</p>
+              <p style="text-align: left">Bio:{{card.bio}}</br>Skills:{{card.skills}}</br>Instagram Link: {{ card.instagram_link }}</p>
               <button formaction="{% url 'sitepages:completeinfo' card.user_id %}" type="submit">More Info</button>
             </div>
           {% endfor %}

@@ -5,6 +5,16 @@
         <form action='' method="POST">
             {% csrf_token %}
             <img src={{ info.image.url }}></img>
+            </br>
+            </br>
+            <p>Name: {{ info.first_name }} {{ info.last_name }}</p>
+            </br>
+            <p>Bio: {{ info.bio }}</p>
+            <p>Instagram Link: <a href="{{ info.instagram_link }}">{{ instagram_link }}</a></p>
+            <p>Linkedin Link: <a href="{{ info.linked_link }}">{{ info.linked_link }}</a></p>
+            <p>Skills: {{ info.skills }}</p>
+            <p>Education: {{ info.education }}</p>
+            <p>Work Experience: {{ info.work_exp }}</p>
         </form>
     </div>
 {% endblock %}

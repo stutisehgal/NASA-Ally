@@ -1,48 +1,16 @@
 {% extends "base.html" %}
+{% load static %}
 
 {% block content %}
+  <link rel="stylesheet" href="{% static 'css/master.css' %}"/>
 	<h1> Welcome to site created by Team Ally</h1></br>
 	<p>Breaking the barriers, Coming together as one. “Ally” is a website platform to connect,and be educated about inequality that can impact millions of lives. “Ally Social” displays the current situation of LGBT and Black lives as stories and podcasts, 
 	“Ally Discourse” provides a safe forum where people can connect, share problems,and inspire. “Ally Pride Fashion” is a novel and innovative approach that gives the LGBT an open platform to connect with professionals and companies, to progress in their
 	careers and leave a mark on the Fashion Industry. “Ally Bias Assessment” allows reflecting on viewpoints as an essential way to start realising and breaking down biases and harmful perceptions.</p>
 
-	<img src='#'></img>
+	<img src='/media/images/Blue and Black Timeline Presentation.png' style='max-width:75%'></img>
 	
-	<style>
-		html{
-  height: 100%;
-  width: 100%;
-  overflow: auto;
-}
 
-
-@font-face {
-    font-family: font1;
-    src: url('..\2020_fonts\2020_fonts\Barlow\Barlow-Medium.ttf');
-  }
-  @font-face {
-    font-family: font2;
-    src: url('..\2020_fonts\2020_fonts\Barlow\Barlow-Black.ttf');
-  }
-  @font-face {
-    font-family: font3;
-    src: url('..\2020_fonts\2020_fonts\Barlow\Barlow-ExtraBold.ttf');
-  }
-  @font-face {
-    font-family: font4;
-    src: url('..\2020_fonts\2020_fonts\Barlow\Barlow-BoldItalic.ttf');
-  }
-		
-h1 {
-  font-weight: 300;
-  font-size: 1.2rem;
-  font-family: font3; }
-p {
-  font-weight: 300;
-  font-size: 0.9rem;
-  font-family: font1; }
-
-</style>
 
 	<script>
   		window.watsonAssistantChatOptions = {
