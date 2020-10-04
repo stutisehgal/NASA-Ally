@@ -11,23 +11,30 @@ Our congenial IBM Watson Assistant Chatbot "Ally Unity" gives an extensive tour 
 
 ### How to run the website?
 To start the project first in the cmd console run the following pip commands:
+
 pip install django
-pip install django-bootstrap3
+
+pip install django-resized
+
+pip install Pillow
+
+pip install django-bootstrap4
 
 To run the project:
 Start the cmd
 using the cd method go to the project site file.
 
 use the command:
+cd projectsite
+
+py manage.py makemigrations
+
 py manage.py migrate
 
 py manage.py runserver
 
 copy the url given to the browser.
 ^^
-For running the django site
-Write the following command:
-Pip install django-resized
 
 ## What is Ally Pride Fashion?
 Ally Pride Fashion is a novel idea, an open platform to provide a one-stop solution for jobs and internships, making the LGBT community grow larger and stronger in the Fashion industry, by making their own portfolio cards visible to Fashion Industry Hiring managers and companies.🌈
