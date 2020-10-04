@@ -46,7 +46,7 @@ Reflecting on whose viewpoints are given power—in all subjects, including math
 4. Automatic Forum/Ally discourse moderation.
 
 ## TEAM ALLY 
-
+<img src="https://github.com/stutisehgal/NASA-Ally/blob/main/images/Team%20Ally.jpeg">
 
 
 
