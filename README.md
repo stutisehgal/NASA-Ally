@@ -1,8 +1,8 @@
 # NASA-Ally
 
-
+<p align="left">
 <img src="https://github.com/stutisehgal/NASA-Ally/blob/main/images/SpaceApps_logo-circle-white.png" width="200" height="230">
-<p align="right">
+</p>
 <img src="https://github.com/stutisehgal/NASA-Ally/blob/main/images/ally%20logo.jpeg" width="200" height="230">
 </p>
 
