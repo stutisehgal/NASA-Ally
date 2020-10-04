@@ -31,7 +31,7 @@
     </script>
   </head>
 
-  <body translate="no" style="background-image:url('https://www.freepik.com/premium-photo/lgbt-background-concept-top-view-with-copy-spaces_8039309.htm')">
+  <body translate="no" style="background-image:url('https://image.freepik.com/free-photo/lgbt-background-concept-top-view-with-copy-spaces_136346-2960.jpg')">
     <nav class="navbar  mynav" role="navigation" id="navbar">
       <a class="navbar-brand mynav" href="{% url 'home' %}">Home Page</a>
     </nav>
@@ -49,7 +49,7 @@
               <img src="{{card.image.url}}" />
               <h3>{{ card.first_name }}</h3>
               <p style="text-align: left">Bio:{{card.bio}}</br>Skills:{{card.skills}}</br>Instagram Link: {{ card.instagram_link }}</p>
-              <button formaction="{% url 'sitepages:completeinfo' card.user_id %}" type="submit">More Info</button>
+              <button class="profile" style="margin-top: 95%; " formaction="{% url 'sitepages:completeinfo' card.user_id %}" type="submit">More Info</button>
             </div>
           {% endfor %}
         </div>
@@ -66,4 +66,41 @@
 
     <script id="rendered-js" src="{% static 'profilecard/js/style.js' %}"></script>
   </body>
+<style>
+  .profile {
+  display: inline-block;
+  border-radius: 20px;
+  border: none;
+  background-color: #87C9FF;
+  text-align: center;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.profile span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.profile span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.profile:hover span {
+  padding-right: 25px;
+}
+
+.profile:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+</style>
 </html>
