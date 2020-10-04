@@ -11,9 +11,13 @@ Our congenial IBM Watson Assistant Chatbot "Ally Unity" gives an extensive tour 
 
 ### How to run the website?
 To start the project first in the cmd console run the following pip commands:
+
 pip install django
+
 pip install django-resized
+
 pip install Pillow
+
 pip install django-bootstrap4
 
 To run the project:
