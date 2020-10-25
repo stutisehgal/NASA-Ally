@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+{% load static %} 
+
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="apple-mobile-web-app-title" />
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap" rel="stylesheet">
+    <title>Ally Profiles</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="{% static 'profilecard/css/style.css' %}" />
+
+    <script>
+      window.console = window.console || function (t) {};
+    </script>
+
+    <script>
+      if (document.location.search.match(/type=embed/gi)) {
+        window.parent.postMessage("resize", "*");
+      }
+    </script>
+  </head>
+
+  <body translate="no" style="background-image:url('https://image.freepik.com/free-photo/lgbt-background-concept-top-view-with-copy-spaces_136346-2960.jpg')">
+    <nav class="navbar  mynav" role="navigation" id="navbar">
+      <a class="navbar-brand mynav" href="{% url 'home' %}">Home Page</a>
+    </nav>
+    <form action="" method="post">
+      <div class="tinder">
+        <div class="tinder--status">
+          <i class="fa fa-remove"></i>
+          <i class="fa fa-heart"></i>
+        </div>
+        
+        <div class="tinder--cards">
+          {% csrf_token %}
+          {% for card in all_cards %}
+            <div class="tinder--card">
+              <img src="{{card.image.url}}" />
+              <h3>{{ card.first_name }}</h3>
+              <p style="text-align: left">Bio:{{card.bio}}</br>Skills:{{card.skills}}</br>Instagram Link: {{ card.instagram_link }}</p>
+              <button class="profile" style="margin-top: 5%; " formaction="{% url 'sitepages:completeinfo' card.user_id %}" type="submit">More Info</button>
+            </div>
+          {% endfor %}
+        </div>
+        
+        <div class="tinder--buttons">
+          <button id="nope"><i class="fa fa-remove"></i></button>
+          <button id="love"><i class="fa fa-heart"></i></button>
+        </div>
+      </div>
+    </form>
+    <script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
+
+    <script src="https://hammerjs.github.io/dist/hammer.min.js"></script>
+
+    <script id="rendered-js" src="{% static 'profilecard/js/style.js' %}"></script>
+  </body>
+<style>
+  .profile {
+  display: inline-block;
+  border-radius: 20px;
+  border: none;
+  background-color: #87C9FF;
+  text-align: center;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.profile span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.profile span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.profile:hover span {
+  padding-right: 25px;
+}
+
+.profile:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+</style>
+</html>

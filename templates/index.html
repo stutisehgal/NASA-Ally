@@ -1,0 +1,221 @@
+{% extends "base.html" %} {% load static %} {% load bootstrap4 %}
+<!DOCTYPE html>
+<html lang="en">
+  {% block content %}
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'projectsite/css/master.css' %}" />
+    <link rel="stylesheet" href="{% static 'projectsite/css/home.css' %}" />
+  </head>
+  <body>
+    <div class="head1">
+      <h1>Welcome to Ally</h1>
+      <br />
+    </div>
+    <div class="row body1">
+      <div class="col-lg-9">
+        <p>
+          Breaking the barriers, Coming together as one. “Ally” is a website
+          platform to connect,and be educated about inequality that can impact
+          millions of lives. “Ally Social” displays the current situation of
+          LGBT and Black lives as stories and podcasts, “Ally Discourse”
+          provides a safe forum where people can connect, share problems,and
+          inspire. “Ally Pride Fashion” is a novel and innovative approach that
+          gives the LGBT an open platform to connect with professionals and
+          companies, to progress in their careers and leave a mark on the
+          Fashion Industry.
+
+          <br />
+          <br />
+          “Ally Bias Assessment” allows reflecting on viewpoints as an essential
+          way to start realising and breaking down biases and harmful
+          perceptions.
+        </p>
+      </div>
+      <div class="col-lg-3">
+        <img src="/media/images/NASA logo.png" alt="" id="nasalogo" />
+      </div>
+    </div>
+
+    <br /><br /><br />
+    <hr />
+    <br /><br />
+
+    <div class="container teamsection">
+      <div class="row">
+        <div class="heading-title text-center">
+          <h3 class="text-uppercase">Our Team</h3>
+          <p class="p-top-30 half-txt">Meet the minds behind this project.</p>
+        </div>
+        <div class="col-md-4 col-sm-4">
+          <div class="team-member">
+            <div class="team-img">
+              <img
+                src="/media/images/Avi.jpg"
+                alt="team member"
+                class="img-responsive teamimg"
+              />
+            </div>
+            <div class="team-hover">
+              <div class="desk">
+                <h4>Hello World</h4>
+                <p>I love to introduce myself as a hardcore Web Designer.</p>
+              </div>
+              <div class="s-link">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-google-plus"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="team-title">
+            <h5>Avi Gautam</h5>
+            <span></span>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-4">
+          <div class="team-member">
+            <div class="team-img">
+              <img
+                src="/media/images/Stuti.jpg"
+                alt="team member"
+                class="img-responsive teamimg"
+              />
+            </div>
+            <div class="team-hover">
+              <div class="desk">
+                <h4>Hi There !</h4>
+                <p>I love to introduce myself as a hardcore Web Designer.</p>
+              </div>
+              <div class="s-link">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-google-plus"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="team-title">
+            <h5>Stuti Sehgal</h5>
+            <span></span>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-4">
+          <div class="team-member">
+            <div class="team-img">
+              <img
+                src="/media/images/Kavya.jpeg"
+                alt="team member"
+                class="img-responsive teamimg"
+              />
+            </div>
+            <div class="team-hover">
+              <div class="desk">
+                <h4>I love to design</h4>
+                <p>I love to introduce myself as a hardcore Web Designer.</p>
+              </div>
+              <div class="s-link">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-google-plus"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="team-title">
+            <h5>Kavya Priya</h5>
+            <span></span>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 col-sm-6" style="padding-left: 15%">
+            <div class="team-member">
+              <div class="team-img">
+                <img
+                  src="/media/images/Hritik.jpg"
+                  alt="team member"
+                  class="img-responsive teamimg"
+                />
+              </div>
+              <div class="team-hover">
+                <div class="desk">
+                  <h4>Hello World</h4>
+                  <p>I love to introduce myself as a hardcore Web Designer.</p>
+                </div>
+                <div class="s-link">
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                  <a href="#"><i class="fa fa-google-plus"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="team-title">
+              <h5>Hritik Bhandari</h5>
+              <span></span>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-sm-6" style="padding-left: 5%">
+            <div class="team-member">
+              <div class="team-img">
+                <img
+                  src="/media/images/Shubhangi.jpeg"
+                  alt="team member"
+                  class="img-responsive teamimg"
+                />
+              </div>
+              <div class="team-hover">
+                <div class="desk">
+                  <h4>Hello World</h4>
+                  <p>I love to introduce myself as a hardcore Web Designer.</p>
+                </div>
+                <div class="s-link">
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                  <a href="#"><i class="fa fa-google-plus"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="team-title">
+              <h5>Shubhangi Soni</h5>
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br /><br /><br />
+    <hr />
+    <br />
+    <br />
+    <div class="heading-title text-center">
+      <h2>Timeline of the project</h2>
+      <br />
+      <div class="timelineimg">
+        <img src="/media/images/timeline.png" style="max-width: 95%" />
+      </div>
+    </div>
+
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+    <script>
+      window.watsonAssistantChatOptions = {
+        integrationID: "f62fbcbf-6ef4-4f7a-935b-d93e08a063d8", // The ID of this integration.
+        region: "eu-gb", // The region your integration is hosted in.
+        serviceInstanceID: "a564abd8-2eed-4afc-9199-20b170e01a09", // The ID of your service instance.
+        onLoad: function (instance) {
+          instance.render();
+        },
+      };
+      setTimeout(function () {
+        const t = document.createElement("script");
+        t.src =
+          "https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+        document.head.appendChild(t);
+      });
+    </script>
+  </body>
+  {% endblock %}
+</html>
